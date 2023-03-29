@@ -28,7 +28,7 @@ To authenticate a request, include the access token in the `x-api-key` header of
 import requests
 
 url = "http://fishair.org/api/docs/{protected-endpoint}"
-headers = {"x-api-key": f"Bearer {your_api_keyn}"}
+headers = {"x-api-key": f"{your_api_key}"}
 response = requests.get(url, headers=headers)
 
 ```
