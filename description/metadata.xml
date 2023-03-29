@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<eml:eml
+    system="https://bgnn.tulane.edu"
+    xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.1"
+    xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 xsd/eml.xsd">
+    <dataset>
+        <alternateIdentifier>https://bgnn.tulane.edu/ark:/89609/{{dataset_ark_id}}</alternateIdentifier>
+        <title>Biology Guided Neural Network - Images and Asscioated Metadata</title>
+		<pubDate>{{accessDate}}</pubDate>
+        <creator>
+            <organizationName>Tulane Univeristy Biodiversity Research Insititute </organizationName>
+            <electronicMailAddress></electronicMailAddress>
+            <onlineUrl>https://www.tubri.org</onlineUrl>
+        </creator>
+        <contact id="pos-1">
+                <individualName>Yasin Bakis</individualName>
+             <positionName xml:lang="en">Administrative Point of Contact</positionName>
+             <electronicMailAddress xml:lang="en">ybakis@tulane.edu</electronicMailAddress>
+        </contact>
+        <contact id="pos-2">
+            <individualName>Xiaojun Wang</individualName>
+            <positionName xml:lang="en">Programmer</positionName>
+            <electronicMailAddress xml:lang="en">xwang48@tulane.edu</electronicMailAddress>
+        </contact>
+        <contact id="pos-3">
+            <individualName>Dom Jebbia</individualName>
+            <positionName xml:lang="en">Information Architect</positionName>
+            <electronicMailAddress xml:lang="en">djebbia@andrew.cmu.edu</electronicMailAddress>
+        </contact>
+        <contact id="pos-4">
+            <individualName>Henry L. Bart</individualName>
+            <positionName xml:lang="en">Scientific Curator</positionName>
+            <electronicMailAddress xml:lang="en">hbartjr@tulane.edu</electronicMailAddress>
+        </contact>
+         <keywordSet>
+            <keyword>metadata</keyword>
+            <keyword>neural network</keyword>
+        </keywordSet>
+         <abstract>
+			 <para>A dataset containing all multimedia's matching the query:
+				{{query_params}}
+			 </para>
+             <para>Tulane’s role in the project has been providing expertise on fish taxonomy, morphology and nomenclature to other project investigators, gathering fish specimen images from image repositories for use in the project, either by searching for multimedia files in iDigBio’s portal and downloading them or having the institutions send us hard drives containing the images. Once the images were gathered, we associated any metadata that accompanied the images, including collection event metadata from FishNet2, updated and cleaned the taxonomic names associated with the images using Eschmeyer’s Catalog of Fishes and the World Registry of Marine Organisms (WoRMS) , filtered the images to confirm that we were working with the right kinds of images for our studies (lateral views of external surfaces of whole fish specimens), then employed humans in a manual task of visualizing the images and capturing image-quality (IQ) metadata from them.</para>
+         </abstract>
+        
+        <maintenance>
+            <description xml:lang="en">
+                <para>
+                    The latest update date of this dataset is 2023-03-29.
+                </para>
+            </description>
+        </maintenance>
+    </dataset>
+</eml:eml>

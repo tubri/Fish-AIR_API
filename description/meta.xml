@@ -1,0 +1,92 @@
+<archive xmlns="" metadata="metadata.xml">
+  <core encoding="UTF-8" fieldsTerminatedBy="\t" linesTerminatedBy="\n" fieldsEnclosedBy="" ignoreHeaderLines="1">
+    <files>
+      <location>multimedia.csv</location>
+    </files>
+    <arkid index="0" term="http://purl.org/dc/terms/identifier"/>
+    <parentcoreid index="1" />
+    <field index="1" term="http://rs.tdwg.org/ac/terms/accessURI"/>
+    <field index="2" term="http://ns.adobe.com/xap/1.0/CreateDate"/>
+    <field index="3" term="http://ns.adobe.com/xap/1.0/ModifyDate"/>
+    <field index="4" term="http://ns.useplus.org/ldf/xmp/1.0/FileNameAsDelivered"/>
+    <field index="5" term="http://purl.org/dc/elements/1.1/format"/>
+    <field index="6" term="http://rs.tdwg.org/dwc/terms/scientificName"/>
+    <field index="7" term="http://rs.tdwg.org/dwc/terms/genus"/>
+    <field index="8" term="http://rs.tdwg.org/dwc/terms/family"/>
+    <field index="9" term="http://ns.adobe.com/xap/1.0/bj/"/>
+    <field index="10" term="http://purl.org/dc/terms/license"/>
+    <field index="11" term="http://rs.tdwg.org/dwc/terms/ownerInstitutionCode"/>
+    <field index="12" term="http://ns.useplus.org/ldf/xmp/1.0/ImageSupplier"/>
+    <field index="13" term="http://ns.adobe.com/xap/1.0/MetadataDate"/>
+    <field index="14" term="http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/SubjectCode "/>
+  </core>
+  <extension encoding="UTF-8">
+    <files>
+      <location>extendedImageMetadata.csv</location>
+    </files>
+    <arkid index="0" term="http://purl.org/dc/terms/identifier"/>
+    <field index="1" term="http://ns.useplus.org/ldf/xmp/1.0/FileNameAsDelivered"/>
+    <field index="2" term="http://purl.org/dc/elements/1.1/format"/>
+    <field index="3" term="http://ns.adobe.com/xap/1.0/CreateDate"/>
+    <field index="4" term="http://ns.adobe.com/xap/1.0/MetadataDate"/>
+    <field index="5" term="http://purl.org/dc/terms/SizeOrDuration"/>
+    <field index="6" term="http://ns.adobe.com/exif/1.0/PixelXDimension"/>
+    <field index="7" term="http://ns.adobe.com/exif/1.0/PixelYDimension"/>
+    <field index="8" term="http://purl.org/dc/terms/license"/>
+    <field index="9" term="http://purl.org/dc/terms/publisher"/>
+    <field index="10" term="http://rs.tdwg.org/dwc/terms/ownerInstitutionCode"/>
+  </extension>
+  <extension encoding="UTF-8">
+    <files>
+      <location>imageQualityMetadata.csv</location>
+    </files>
+    <arkid index="0" term="http://purl.org/dc/terms/identifier"/>
+    <field index="1" term="http://purl.org/dc/terms/license"/>
+    <field index="2" term="http://purl.org/dc/terms/publisher"/>
+    <field index="3" term="http://rs.tdwg.org/dwc/terms/ownerInstitutionCode"/>
+    <field index="4" term="http://ns.adobe.com/xap/1.0/CreateDate"/>
+    <field index="5" term="http://ns.adobe.com/xap/1.0/MetadataDate"/>
+    <field index="6" term="http://rs.tdwg.org/dwc/terms/organismQuantity"/>
+    <containsScaleBar index="7" term="http://rs.tdwg.org/dwc/terms/occurrenceRemarks"/>
+    <containsLabel index="8" term="http://rs.tdwg.org/dwc/terms/occurrenceRemarks"/>
+    <accessionNumberValidity index="9" term="http://rs.tdwg.org/dwc/terms/occurrenceRemarks"/>
+    <contansBarcode index="10" term="http://rs.tdwg.org/dwc/terms/occurrenceRemarks"/>
+    <containsColorBar index="11" term="http://rs.tdwg.org/dwc/terms/occurrenceRemarks"/>
+    <nonSpecimenObjecs index="12" term="http://rs.tdwg.org/dwc/terms/occurrenceRemarks"/>
+    <partsOverlapping index="13" term="http://rs.tdwg.org/dwc/terms/occurrenceRemarks"/>
+    <specimenAngle index="14" term="http://rs.tdwg.org/dwc/terms/occurrenceRemarks"/>
+    <specimenView index="15" term="http://rs.tdwg.org/dwc/terms/occurrenceRemarks"/>
+    <specimenCurved index="16" term="http://rs.tdwg.org/dwc/terms/occurrenceRemarks"/>
+    <partsMissing index="17" term="http://rs.tdwg.org/dwc/terms/occurrenceRemarks"/>
+    <allPartsVisible index="18" term="http://rs.tdwg.org/dwc/terms/occurrenceRemarks"/>
+    <partsFolded index="19" term="http://rs.tdwg.org/dwc/terms/occurrenceRemarks"/>
+    <brightness index="20" term="http://rs.tdwg.org/dwc/terms/occurrenceRemarks"/>
+    <uniformBackground index="21" term="http://rs.tdwg.org/dwc/terms/occurrenceRemarks"/>
+    <onFocus index="22" term="http://rs.tdwg.org/dwc/terms/occurrenceRemarks"/>
+    <colorIssue index="23" term="http://rs.tdwg.org/dwc/terms/occurrenceRemarks"/> 
+    <quality index="24" term="http://ns.adobe.com/xap/1.0/Rating"/>
+    <field index="25" term="http://rs.tdwg.org/ac/terms/resourceCreationTechnique"/> 
+	
+
+  </extension>
+  <extension encoding="UTF-8">
+  <files>
+      <location>batch.csv</location>
+    </files>
+    <arkid index="0" term="http://purl.org/dc/terms/identifier"/>
+    <batchName index="1" />
+    <field index="2" term="http://rs.tdwg.org/dwc/terms/ownerInstitutionCode"/>
+    <pipeline index="3"/>
+    <field index="4" term="http://ns.adobe.com/xap/1.0/CreateDate">
+    <field index="5" term="http://ns.adobe.com/xap/1.0/ModifyDate"/>
+    <creator index="6" />
+    <creatorComments index="7" />
+    <contactor index="8" />
+    <labCode index="9" />
+    <projectName index="10" />
+    <codeRepository index="11" />
+    <datasetName index="12" />
+    <field index="13" term="http://purl.org/dc/terms/bibliographicCitation"/>
+    <URL index="14"/>
+  </extension>
+</archive>
