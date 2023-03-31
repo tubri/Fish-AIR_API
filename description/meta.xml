@@ -50,7 +50,7 @@
     <field index="8" term="https://fishair.org/terms/containsLabel"/>
     <field index="9" term="https://fishair.org/terms/accessionNumberValidity"/>
     <field index="10" term="https://fishair.org/terms/containsBarcode"/>
-    <field index="11" term="hhttps://fishair.org/terms/containsColorBar"/>
+    <field index="11" term="https://fishair.org/terms/containsColorBar"/>
     <field index="12" term="https://fishair.org/terms/nonSpecimenObjects"/>
     <field index="13" term="https://fishair.org/terms/partsOverlapping"/>
     <field index="14" term="https://fishair.org/terms/specimenAngle"/>
