@@ -219,7 +219,8 @@ def uploadFileValidation(file: UploadFile):
 
 # create api key with salt
 def create_api_key(length: int = 12):
-    salt = string.ascii_letters + string.digits + string.punctuation
+    safe_punctuation = "!#$%&()*+,-./:;<=>?@[]^_`{|}~"
+    salt = string.ascii_letters + string.digits + safe_punctuation
     return ''.join(secrets.choice(salt) for _ in range(length))
 
 
