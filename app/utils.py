@@ -62,22 +62,22 @@ def zipfile_generator(results, batch_results, params):
 def csv_generator(results, type):
     data_count = 0
     if type == 'multimedia':
-        csv_header = "ARKID,parentArkId,accessURI,createDate,modifyDate,fileNameAsDelivered,format,scientificName," \
-                     "genus,family,batchName,license,source,ownerInstitutionCode\n "
+        csv_header = "ARKID,parentARKID,accessURI,createDate,modifyDate,fileNameAsDelivered,format,scientificName," \
+                     "genus,family,batchARKID,batchName,license,source,ownerInstitutionCode\n"
         csv_body = ""
         for record in results:
             recstring = str(record.ark_id) + ',' + str(record.parent_ark_id) + ',' + str(
                 record.path) + ',' + str(record.create_date) + ',' + str(record.modify_date) + ',\"' + str(
                 record.filename_as_delivered) + '\",' + str(record.format) + ',\"' + \
                         str(record.scientific_name) + '\",' + str(record.genus) + ',' + str(record.family) + ',' + str(
-                record.batch_id) + ',' + str(record.license) + ',' + str(
+                record.batch_ark_id) + ',' + str(record.batch_id) + ',' + str(record.license) + ',' + str(
                 record.source) + ',' + str(record.owner_institution_code) + '\n'
             csv_body += recstring
             data_count = data_count + 1
         return csv_header + csv_body, data_count
     if type == 'extended':
         csv_header = "ARKID,fileNameAsDelivered,format,createDate,metadataDate,size,width,height,license,publisher," \
-                     "ownerInstitutionCode\n "
+                     "ownerInstitutionCode\n"
         csv_body = ""
         for record in results:
             recstring = str(record.extended_metadata[0].ark_id) + ',\"' + str(
@@ -134,13 +134,13 @@ def csv_generator(results, type):
 
 def batch_citation_generator(results):
     # citations
-    citation_firstline = "Multimedia of Fish Specimen and associated metadata. Biology guided Neural Network. Tulane " \
-                         "University Biodiversity Research Institute (https://bgnn.tulane.edu).\n "
+    citation_firstline = "Multimedia of Fish Specimen and associated metadata. Fish-AIR. Biology guided Neural Network. Tulane " \
+                         "University Biodiversity Research Institute (https://fishair.org).\n"
     citation_body = ""
 
     # batch
-    csv_header = "ARKID,batchName,institutionCode,pipeline,createDate,modifyDate,creator,creatorComments,contactor," \
-                 "labCode,projectName,codeRepository,datasetName,bibliographicCitation,URL\n "
+    csv_header = "batchARKID,batchName,institutionCode,pipeline,createDate,modifyDate,creator,creatorComments,contactor," \
+                 "labCode,projectName,codeRepository,datasetName,bibliographicCitation,URL\n"
     csv_body = ""
     for record in results:
         recstring = str(record.ark_id) \
